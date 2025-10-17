@@ -126,7 +126,7 @@ The project was extensively tested with:
 Here’s my score for the Minishell project:
 
 <p align="center">
-  <img src="https://github.com/doooriian/42-Badges/blob/main/badges/100Grade.png" alt="Minishell Grade">
+  <img src="https://github.com/doooriian/42-Badges/blob/main/badges/MinishellGrade.png" alt="Minishell Grade">
 </p>
 
 ---
