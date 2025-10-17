@@ -131,14 +131,6 @@ Here’s my score for the Minishell project:
 
 ---
 
-## 📚 Resources
-
-- **[Bash Reference Manual](https://www.gnu.org/software/bash/manual/)**  
-- **[Minishell 42 Guide](https://github.com/matthieugaudin/minishell)**  
-- **[UNIX Process & Signals Documentation](https://man7.org/linux/man-pages/man7/signal.7.html)**  
-
----
-
 ## 📬 Contact
 
 Feel free to reach out or contribute to this project on [GitHub](https://github.com/doooriian)!
