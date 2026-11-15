@@ -67,8 +67,8 @@ The goal? Build a fully functional shell that mimics Bash-like behavior while ad
 Clone the repository and compile the project:
 
 ```bash
-git clone git@github.com:doooriian/Minishell.git
-cd Minishell
+git clone https://github.com/doooriian/minishell.git
+cd minishell
 make
 ```
 
