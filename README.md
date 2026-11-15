@@ -1,37 +1,27 @@
-<br />
-<p align="center">
-  <a href="https://42.fr/">
-    <img src="https://github.com/doooriian/42-Badges/blob/main/42_Logo.png" alt="42 Logo" width="250" height="250">
-  </a>
+<div align="center">
 
-  <h1 align="center">Minishell</h1>
+<a href="https://42.fr/"><img src="https://raw.githubusercontent.com/doooriian/42-Badges/main/badges/minishellm.png" width="125" alt="minishell 42 project badge" /></a>
 
-  <p align="center">
-    A simplified UNIX shell implementation from 42 School
-    <br /><br />
-    <img src="https://github.com/doooriian/42-Badges/blob/main/badges/minishellm.png" alt="Minishell Badge" width="150">
-  </p>
-</p>
+# minishell
 
-<p align="center">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/doooriian/Minishell?color=1A237E" />
-  <img alt="Code language count" src="https://img.shields.io/github/languages/count/doooriian/Minishell?color=00BCD4" />
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/doooriian/Minishell?color=7B1FA2" />
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/doooriian/Minishell?color=D32F2F" />
-</p>
+**Unix shell and process management**
+
+<img src="https://img.shields.io/badge/42%20School-Project-0F766E?style=flat-square" alt="42 School project" />
+
+</div>
 
 ---
 
-## ✨ Overview
+## 🔎 Overview
 
-**Minishell** is an individual project at 42 School that recreates a simplified version of a UNIX shell.  
+**Minishell** is a 42 School project that recreates a simplified version of a UNIX shell.  
 This project challenges your understanding of **process creation**, **pipes**, **redirections**, **signals**, and **environment management** — all core concepts of systems programming in C.
 
 The goal? Build a fully functional shell that mimics Bash-like behavior while adhering to 42’s strict coding standards.
 
 ---
 
-## 📑 Key Features
+## ✨ Key Features
 
 - **Command Execution**  
   Executes commands using `fork`, `execve`, and `waitpid`.
@@ -77,8 +67,8 @@ The goal? Build a fully functional shell that mimics Bash-like behavior while ad
 Clone the repository and compile the project:
 
 ```bash
-git clone git@github.com:doooriian/Minishell.git
-cd Minishell
+git clone https://github.com/doooriian/minishell.git
+cd minishell
 make
 ```
 
@@ -121,7 +111,7 @@ The project was extensively tested with:
 ---
 
 
-## ✅ Results
+## 🏅 Results
 
 Here’s my score for the Minishell project:
 
