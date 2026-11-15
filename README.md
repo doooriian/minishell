@@ -2,8 +2,6 @@
 
 > **42 School project** · C · Processes · Shell
 
-A simplified UNIX command interpreter that parses commands, executes processes, and manages redirections and pipelines.
-
 ## Overview
 
 A simplified UNIX command interpreter that parses commands, executes processes, and manages redirections and pipelines.
