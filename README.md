@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://42.fr/"><img src="https://raw.githubusercontent.com/doooriian/42-Badges/main/badges/minishellm.png" width="125" alt="minishell 42 project badge" /></a>
+<a href="https://42.fr/"><img src="https://raw.githubusercontent.com/doooriian/42-Badges/main/badges/minishelle.png" width="125" alt="minishell 42 project badge" /></a>
 
 # minishell
 
