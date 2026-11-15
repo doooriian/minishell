@@ -4,24 +4,16 @@
 
 # minishell
 
-**42 School · 🐚 Software engineering project**
+**42 School project · Unix shell implementation**
 
 <img src="https://img.shields.io/badge/42_Project-C%20%7C%20Unix%20shell-0F766E?style=flat-square" alt="minishell technology" />
 <img src="https://img.shields.io/badge/Documentation-Project_Overview-334155?style=flat-square" alt="Project documentation" />
 
 </div>
 
----
-
-
----
-
 ## 🔎 Overview
 
 A simplified UNIX command interpreter that parses commands, executes processes, and manages redirections and pipelines.
-
-
----
 
 ## ✨ Features
 
@@ -30,17 +22,11 @@ A simplified UNIX command interpreter that parses commands, executes processes, 
 - Handle pipes, input/output redirections, and heredocs
 - Expand environment variables and handle interactive signals
 
-
----
-
 ## 🧩 Technical approach
 
 The codebase separates tokenization, parsing, execution, and built-ins. It uses POSIX process and file descriptor primitives and GNU Readline for interactive input.
 
 > **Tech stack** · C · POSIX · GNU Readline · Make.
-
-
----
 
 ## 🚀 Build and usage
 
@@ -63,15 +49,9 @@ ls -la | grep README
 exit
 ```
 
-
----
-
 ## 🧪 Verification
 
 Build in the documented environment, exercise normal scenarios and edge cases, and compare actual behaviour with the expected output. No automated CI test suite is included in this repository.
-
-
----
 
 ## ⚠️ Notes and limitations
 
