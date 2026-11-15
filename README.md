@@ -1,66 +1,135 @@
-<div align="center">
+<p align="center">
+  <a href="https://42.fr/">
+    <img src="https://github.com/doooriian/42-Badges/blob/main/42_Logo.png" alt="42 Logo" width="100" height="100">
+  </a>
 
-<a href="https://42.fr/"><img src="https://raw.githubusercontent.com/doooriian/42-Badges/main/badges/minishellm.png" alt="minishell 42 badge" width="125" /></a>
+  <h1 align="center">Minishell</h1>
 
-# minishell
+  <p align="center">
+    A simplified UNIX shell implementation from 42 School
+    <br /><br />
+    <img src="https://github.com/doooriian/42-Badges/blob/main/badges/minishellm.png" alt="Minishell Badge" width="125">
+  </p>
+<p align="center"><img src="https://img.shields.io/badge/42%20School-Project-0F766E?style=flat-square" alt="42 School project" /></p>
 
-**42 School project · Unix shell implementation**
-
-<img src="https://img.shields.io/badge/42_Project-C%20%7C%20Unix%20shell-0F766E?style=flat-square" alt="minishell technology" />
-<img src="https://img.shields.io/badge/Documentation-Project_Overview-334155?style=flat-square" alt="Project documentation" />
-
-</div>
-
-## 🔎 Overview
-
-A simplified UNIX command interpreter that parses commands, executes processes, and manages redirections and pipelines.
-
-## ✨ Features
-
-- Tokenize and parse shell commands
-- Run external executables and common built-in commands
-- Handle pipes, input/output redirections, and heredocs
-- Expand environment variables and handle interactive signals
-
-## 🧩 Technical approach
-
-The codebase separates tokenization, parsing, execution, and built-ins. It uses POSIX process and file descriptor primitives and GNU Readline for interactive input.
-
-> **Tech stack** · C · POSIX · GNU Readline · Make.
-
-## 🚀 Build and usage
-
-**Platform:** UNIX-like environment with GNU Readline development headers and library.
-
-```bash
-git clone https://github.com/doooriian/minishell.git
-cd minishell
-make
-./minishell
-```
-
-Inside the shell:
-
-```bash
-pwd
-export NAME=42
-echo $NAME
-ls -la | grep README
-exit
-```
-
-## 🧪 Verification
-
-Build in the documented environment, exercise normal scenarios and edge cases, and compare actual behaviour with the expected output. No automated CI test suite is included in this repository.
-
-## ⚠️ Notes and limitations
-
-This is an educational shell rather than a full Bash replacement. The repository is a GitHub fork; project authorship and individual responsibilities should be credited according to the original contributors.
+<p align="center">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/doooriian/Minishell?color=1A237E" />
+  <img alt="Code language count" src="https://img.shields.io/github/languages/count/doooriian/Minishell?color=00BCD4" />
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/doooriian/Minishell?color=7B1FA2" />
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/doooriian/Minishell?color=D32F2F" />
+</p>
 
 ---
 
-<div align="center">
+## 🔎 Overview
 
-<sub>Part of the <a href="https://42.fr/">42 curriculum</a> · <a href="https://github.com/doooriian">Back to my GitHub profile</a></sub>
+**Minishell** is a 42 School project that recreates a simplified version of a UNIX shell.  
+This project challenges your understanding of **process creation**, **pipes**, **redirections**, **signals**, and **environment management** — all core concepts of systems programming in C.
 
-</div>
+The goal? Build a fully functional shell that mimics Bash-like behavior while adhering to 42’s strict coding standards.
+
+---
+
+## ✨ Key Features
+
+- **Command Execution**  
+  Executes commands using `fork`, `execve`, and `waitpid`.
+
+- **Built-in Commands**  
+  Supports the main shell built-ins:
+  - `echo` — Displays text.
+  - `cd` — Changes directory.
+  - `pwd` — Prints current working directory.
+  - `export` / `unset` — Manages environment variables.
+  - `env` — Displays environment variables.
+  - `exit` — Exits the shell.
+
+- **Pipes & Redirections**  
+  Handles operators like:
+  - `|` — Command chaining.
+  - `<`, `>` — Input/output redirection.
+  - `>>` — Append output.
+  - `<<` — Heredoc functionality.
+
+- **Signal Handling**  
+  Correctly manages `SIGINT` (Ctrl+C), `SIGQUIT` (Ctrl+\), and ignores signals in child processes for Bash-like behavior.
+
+- **Environment Variable Expansion**  
+  Expands variables like `$PATH`, `$USER`, and custom ones dynamically.
+
+- **Error & Memory Management**  
+  Robust error detection and complete memory cleanup on exit.
+
+---
+
+## 🛠️ Technologies Used
+
+- **[C](https://devdocs.io/c/)** — Core programming language.  
+- **[Makefile](https://www.gnu.org/software/make/manual/make.html)** — Build automation tool.  
+- **[POSIX System Calls](https://man7.org/linux/man-pages/man2/)** — For processes, signals, and file descriptors.  
+- **[GNU Readline](https://tiswww.case.edu/php/chet/readline/rltop.html)** — For command-line input handling.
+
+---
+
+## 🚀 How to Build and Run
+
+Clone the repository and compile the project:
+
+```bash
+git clone git@github.com:doooriian/Minishell.git
+cd Minishell
+make
+```
+
+Run the program:
+
+```bash
+./minishell
+```
+
+Example usage inside the shell:
+
+```bash
+echo "Hello, Minishell!"
+export NAME=Dorian
+echo $NAME
+ls -la | grep minishell
+cat file.txt > output.txt
+exit
+```
+
+Clean and rebuild:
+
+```bash
+make clean
+make fclean
+make re
+```
+
+---
+
+## 🧪 Testing
+
+The project was extensively tested with:
+- Basic and complex commands (single, piped, and redirected).  
+- Edge cases for syntax errors and invalid inputs.  
+- Signal handling during execution and idle mode.  
+- Memory management verified using **Valgrind**.  
+- Comparison with Bash outputs for consistency.  
+
+---
+
+
+## 🏅 Results
+
+Here’s my score for the Minishell project:
+
+<p align="center">
+  <img src="https://github.com/doooriian/42-Badges/blob/main/badges/MinishellGrade.png" alt="Minishell Grade">
+</p>
+
+---
+
+## 📬 Contact
+
+Feel free to reach out or contribute to this project on [GitHub](https://github.com/doooriian)!
